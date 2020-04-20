@@ -11,6 +11,8 @@ namespace BitcoinLib.Responses
     {
         public string Hex { get; set; }
         public long Version { get; set; }
+        public long Size { get; set; }
+        public long Vsize { get; set; }
         public uint LockTime { get; set; }
         public List<Vin> Vin { get; set; }
         public List<Vout> Vout { get; set; }
