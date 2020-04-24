@@ -17,6 +17,7 @@ namespace BitcoinLib.RPC.Specifications
         getdifficulty,
         getmempoolinfo,
         getrawmempool,
+        getmempoolentry,
         gettxout,
         gettxoutproof,
         gettxoutsetinfo,
