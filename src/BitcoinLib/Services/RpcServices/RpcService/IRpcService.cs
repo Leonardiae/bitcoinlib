@@ -81,6 +81,7 @@ namespace BitcoinLib.Services.RpcServices.RpcService
         DecodeScriptResponse DecodeScript(string hexString);
         //  fundrawtransaction
         GetRawTransactionResponse GetRawTransaction(string txId, int verbose = 0);
+        GetMempoolEntryResponse GetMempoolEntry(string txId);
         string SendRawTransaction(string rawTransactionHexString, bool? allowHighFees = false);
         SignRawTransactionResponse SignRawTransaction(SignRawTransactionRequest signRawTransactionRequest);
         SignRawTransactionWithKeyResponse SignRawTransactionWithKey(SignRawTransactionWithKeyRequest signRawTransactionWithKeyRequest);

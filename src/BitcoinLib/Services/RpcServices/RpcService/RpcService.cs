@@ -400,7 +400,14 @@ namespace BitcoinLib.Services
             return _rpcConnector.MakeRequest<string>(RpcMethods.getrawchangeaddress);
         }
 
-        public GetRawTransactionResponse GetRawTransaction(string txId, int verbose)
+        public GetMempoolEntryResponse GetMempoolEntry(string txId)
+        {
+            {
+                return _rpcConnector.MakeRequest<GetMempoolEntryResponse>(RpcMethods.getmempoolentry, txId);
+            }
+        }
+
+            public GetRawTransactionResponse GetRawTransaction(string txId, int verbose)
         {
             if (verbose == 0)
             {
