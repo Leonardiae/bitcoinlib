@@ -24,11 +24,13 @@ namespace BitcoinLib.Responses
         public string wtxid { get; set; }
         public string[] depends { get; set; }
         public string[] spentby { get; set; }
+        [JsonProperty("bip125-replaceable")]
+        public bool Bip125Replaceable { get; set; }
     }
     
     public class Fees
     {
-        public decimal base { get; set; }
+        public decimal Base { get; set; }
         public decimal modified { get; set; }
         public decimal ancestor { get; set; }
         public decimal descendant { get; set; }
