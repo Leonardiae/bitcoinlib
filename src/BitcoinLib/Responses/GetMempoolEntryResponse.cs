@@ -24,8 +24,6 @@ namespace BitcoinLib.Responses
         public string wtxid { get; set; }
         public string[] depends { get; set; }
         public string[] spentby { get; set; }
-        [JsonProperty("bip125-replaceable")]
-        public bool Bip125Replaceable { get; set; }
     }
     
     public class Fees
