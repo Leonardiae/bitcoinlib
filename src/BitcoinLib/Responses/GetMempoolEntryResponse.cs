@@ -11,7 +11,7 @@ namespace BitcoinLib.Responses
     { 
         public decimal Modifiedfee { get; set; }
         public decimal Fee { get; set; }
-        public long Size { get; set; }
+        public long vsize { get; set; }
         public string WTxId { get; set; }
     }
 }
