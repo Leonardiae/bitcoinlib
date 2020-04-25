@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2014 - 2016 George Kimionis
+﻿// Copyright (c) 2014 - 2016 Leonard
 // See the accompanying file LICENSE for the Software License Aggrement
 
 namespace BitcoinLib.Responses.Bridges
@@ -7,6 +7,6 @@ namespace BitcoinLib.Responses.Bridges
     //  A practical example is the bridging of GetTransaction(), DecodeRawTransaction() and GetRawTransaction()
     public interface ITransactionResponseMempool
     {
-        string WTxId { get; set; }
+        string wtxid { get; set; }
     }
 }
